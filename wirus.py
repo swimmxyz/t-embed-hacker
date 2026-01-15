@@ -17,7 +17,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
 # Pobierz ścieżkę do folderu ze skryptem
-script_dir = os.path.dirname(os.path.abspath(__file__))
+script_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()
 
 # Załaduj GIF
 gif_frames = []
